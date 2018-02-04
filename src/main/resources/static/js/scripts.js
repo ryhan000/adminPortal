@@ -2,6 +2,7 @@
  * 
  */
 
+
 function checkBillingAddress() {
 	if($("#theSameAsShippingAddress").is(":checked")) {
 		$(".billingAddress").prop("disabled", true);
