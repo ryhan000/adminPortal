@@ -9,5 +9,7 @@ public interface BookService {
 	Book save(Book book);
 
 	List<Book> findAll();
+	
+	Book findOne(Long id);
 
 }
