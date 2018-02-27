@@ -14,7 +14,7 @@ public class Book {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Long id;
+	private Long  id;
 	private String title;
 	private String author;
 	private String publisher;
@@ -38,12 +38,12 @@ public class Book {
 	private MultipartFile bookImage;
 
 
-	public Long getId() {
+	public Long  getId() {
 		return id;
 	}
 
 
-	public void setId(Long id) {
+	public void setId(Long  id) {
 		this.id = id;
 	}
 
@@ -205,6 +205,17 @@ public class Book {
 
 	public void setBookImage(MultipartFile bookImage) {
 		this.bookImage = bookImage;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Book [id=" + id + ", title=" + title + ", author=" + author + ", publisher=" + publisher
+				+ ", publicationDate=" + publicationDate + ", language=" + language + ", category=" + category
+				+ ", numberOfPages=" + numberOfPages + ", format=" + format + ", isbn=" + isbn + ", shippingWeight="
+				+ shippingWeight + ", listPrice=" + listPrice + ", ourPrice=" + ourPrice + ", active=" + active
+				+ ", description=" + description + ", inStockNumber=" + inStockNumber + ", bookImage=" + bookImage
+				+ "]";
 	}
 	
 	
